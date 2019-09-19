@@ -1,0 +1,115 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(30px, 1fr));
+    grid-template-rows: repeat(6, minmax(30px, 1fr));
+    grid-template-areas: 
+        "clear display display display" 
+        "seven eight nine divide"
+        "four five six timez"
+        "one two three minus"
+        "zeroo period equals addition"
+        "empty empty empty empty";
+    grid-gap: .15rem;
+}
+
+.mystery-boyos {
+    background-color: white;
+    border: none;
+    font-size: 40px;
+}
+
+.mystery-boyos:hover {
+    background-color: none;
+}
+
+.calc-box {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.darkgreen {
+    background-color: #39773e;
+}
+
+.lightgreen {
+    background-color: rgb(143, 191, 127);
+}
+
+.button {
+    font-family: inherit;
+    padding: 40px;
+    font-size: 40px;
+}
+
+button:hover {
+    background-color: rgb(80, 121, 64)
+}
+
+button:focus {
+    outline: none;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: #3895D3;
+}
+
+.display {
+    grid-area: display; 
+    transform: scale(.9945);
+    color: white;
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 40px;
+    border: none;
+}
+
+.num-7 {
+    grid-area: seven;
+}
+
+.num-8 {
+    grid-area: eight;
+}
+.num-9 {
+    grid-area: nine;
+}
+.divide {
+    grid-area: divide;
+}
+.num-4 {
+    grid-area: four;
+}
+.num-5 {
+    grid-area: five;
+}
+.num-6 {
+    grid-area: six;
+}
+.multiply {
+    grid-area: timez; 
+}
+.num-1 {
+    grid-area: one;
+}
+.num-2 {
+    grid-area: two;
+}
+.num-3 {
+    grid-area: three;
+}
+.subtract {
+    grid-area: minus;
+}
+.num-0 {
+    grid-area: zeroo;
+}
+.decimal {
+    grid-area: period;
+}
+.equal {
+    grid-area: equals;
+}
+.addition {
+    grid-area: addition;
+}
